@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const services = [
   {
@@ -66,14 +67,14 @@ export const services = [
 export function Logo({ light = false }) {
   return (
     <Link href="/" className={`brand ${light ? "brand-light" : ""}`} aria-label="Aero National home">
-      <span className="brand-mark" aria-hidden="true">
-        <span className="brand-mark-left" />
-        <span className="brand-mark-right" />
-      </span>
-      <span className="brand-type">
-        <strong>AERO NATIONAL</strong>
-        <small>INTEGRATED CONSTRUCTION SERVICES</small>
-      </span>
+      <Image
+        src="/images/aero-logo-horizontal.png"
+        alt="Aero National"
+        width={220}
+        height={145}
+        className="brand-logo-img"
+        priority
+      />
     </Link>
   );
 }

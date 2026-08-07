@@ -50,37 +50,13 @@ img { max-width: 100%; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  min-width: 225px;
 }
-.brand-mark {
-  position: relative;
-  width: 42px;
-  height: 38px;
-  display: inline-block;
-}
-.brand-mark-left, .brand-mark-right {
-  position: absolute;
+.brand-logo-img {
+  width: auto;
+  height: 44px;
+  object-fit: contain;
   display: block;
-  top: 0;
-  height: 38px;
 }
-.brand-mark-left {
-  left: 2px;
-  width: 13px;
-  background: var(--yellow);
-  transform: skew(-25deg);
-}
-.brand-mark-right {
-  left: 18px;
-  width: 24px;
-  background: currentColor;
-  clip-path: polygon(50% 0, 100% 100%, 70% 100%, 58% 68%, 21% 68%, 8% 100%, 0 100%);
-}
-.brand-type { display: flex; flex-direction: column; line-height: 1; }
-.brand-type strong { font-size: 17px; letter-spacing: .12em; white-space: nowrap; }
-.brand-type small { margin-top: 6px; color: var(--yellow); font-size: 7px; letter-spacing: .16em; white-space: nowrap; }
-.brand-light { color: white; }
 
 .desktop-nav {
   margin-left: auto;
@@ -402,8 +378,7 @@ img { max-width: 100%; }
   .utility-bar { justify-content: flex-end; }
   .header-cta { display: none; }
   .brand { min-width: 0; }
-  .brand-type strong { font-size: 13px; }
-  .brand-type small { font-size: 5px; }
+  .brand-logo-img { height: 34px; }
   .hero { min-height: 560px; }
   .hero-content { margin: 0; padding: 60px 24px; }
   .hero h1 { font-size: 52px; }
