@@ -2,10 +2,6 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://aeronational.inc"),
-  icons: {
-    icon: "/images/aero-logo-icon.png",
-    apple: "/images/aero-logo-icon.png"
-  },
   title: {
     default: "Aero National | Integrated Construction Services",
     template: "%s | Aero National"
